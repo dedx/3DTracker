@@ -14,8 +14,6 @@ import Voxel as vox
 from mpl_toolkits.mplot3d import Axes3D
 import matplotlib.pyplot as plt
 
-
-
 fin = open('NIFFTE-alphas.dat')
 lines = fin.readlines()
 lnum = 0
@@ -48,7 +46,7 @@ for line in lines:
 	      print pt
        if (var == 'g'):
        	  fig = plt.figure()
-	  ax = fig.add_subplot(111, projection='3d')
+	  ax = Axes3D(fig)
        	  for pt in points:
 	      ax.scatter(pt.x,pt.y,pt.z,color='r',marker='o')
 	  plt.show()
