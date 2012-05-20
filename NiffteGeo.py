@@ -42,5 +42,5 @@ def MapVoxeltoXYZ(voxel):
     if (voxel.volume == 1):
        x = -x
 
-    point = sp.SpacePoint(x,y,z)
+    point = sp.SpacePoint(x,y,z,voxel.adc)
     return point
