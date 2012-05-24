@@ -11,14 +11,18 @@
 import math
 import numpy as np
 import SpacePoint as sp
+import Voxel as vox
 
 
 
-def FindTracks(points):
-    """Given and array of space points, find the ones that belong to
-    straight line tracks.  Return a list of track arrays of points"""
+def FindTracks(voxels):
+    """Given an array of voxels, find the ones that belong to
+    straight line tracks.  Return a list of track arrays of space points"""
 
     tracks = []
 
+    #compute the gradient for every voxel by taking the difference
+    between the current adc and the neighbor adc in all directions.
+    Each voxel will then have 
     for pt in points:
     	

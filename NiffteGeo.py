@@ -11,6 +11,10 @@ import math
 import Voxel as vox
 import SpacePoint as sp
 
+maxRow = 62
+maxCol = 62
+maxBkt = 50
+
 def MapVoxeltoXYZ(voxel):
     """Map the indices to x,y,z coordinates for
     the NIFFTE detector geometry.
